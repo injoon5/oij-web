@@ -26,13 +26,7 @@ const MobileNav = () => {
         aria-label="Toggle Menu"
         onClick={onToggleNav}
       >
-        <Image
-          src="/public/images/logo.png"
-          alt="Logo"
-          width={500}
-          height={500}
-        />
-
+        <Image src="/public/images/logo.png" alt="Logo" width={500} height={500} />
       </button>
       <div
         className={`fixed top-24 right-0 z-10 h-full w-full transform bg-gray-200 opacity-95 duration-300 ease-in-out dark:bg-gray-800 ${

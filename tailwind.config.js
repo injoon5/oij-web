@@ -12,6 +12,9 @@ module.exports = {
       spacing: {
         '9/16': '56.25%',
       },
+      screens: {
+        '3xl': '1600px',
+      },
       lineHeight: {
         11: '2.75rem',
         12: '3rem',

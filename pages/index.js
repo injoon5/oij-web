@@ -16,19 +16,31 @@ export default function Home({ posts }) {
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
-      <h1 className="flex justify-center py-5 text-5xl font-bold leading-5 tracking-tight text-gray-900 dark:text-gray-100 md:text-6xl md:leading-10 lg:text-7xl lg:leading-14 ">
+      <h1
+        className="flex justify-center py-5 text-5xl font-bold leading-5 tracking-tight text-gray-900 dark:text-gray-100 md:text-6xl md:leading-10 lg:text-7xl lg:leading-14"
+        style={{ wordBreak: 'keep-all' }}
+      >
         Injoon Oh
       </h1>
-      <h2 className="flex justify-center text-2xl font-extrabold leading-9 tracking-tight text-gray-700 dark:text-gray-300 md:text-4xl md:leading-14 lg:text-5xl">
+      <h2
+        className="flex justify-center text-2xl font-extrabold leading-9 tracking-tight text-gray-700 dark:text-gray-300 md:text-4xl md:leading-14 lg:text-5xl"
+        style={{ wordBreak: 'keep-all' }}
+      >
         소프트웨어 개발에 관심이 많은 학생.
       </h2>
       <div className="py-10"></div>
       <div className="columns-1 gap-4 space-y-4 2xl:columns-2">
         <div className="aspect-w-16 aspect-h-9 relative rounded-3xl bg-gradient-to-bl from-red-500 to-blue-600 p-10">
-          <h2 className="leading-15 justify-right flex text-4xl font-extrabold text-white text-opacity-60 md:text-5xl">
+          <h2
+            className="leading-15 justify-right flex text-4xl font-extrabold text-white text-opacity-60 md:text-5xl"
+            style={{ wordBreak: 'keep-all' }}
+          >
             다양한 기술 스택
           </h2>
-          <h2 className="leading-15 justify-right flex pb-5 text-4xl font-extrabold text-white md:text-5xl">
+          <h2
+            className="leading-15 justify-right flex pb-5 text-4xl font-extrabold text-white md:text-5xl"
+            style={{ wordBreak: 'keep-all' }}
+          >
             무한한 가능성.
           </h2>
           <h2
@@ -50,10 +62,16 @@ export default function Home({ posts }) {
         </div>
 
         <div className="aspect-w-16 aspect-h-9 relative rounded-3xl bg-gradient-to-tr from-fuchsia-900 to-red-600 p-10 ">
-          <h2 className="leading-15 justify-right flex text-4xl font-extrabold text-white text-opacity-60 md:text-5xl">
+          <h2
+            className="leading-15 justify-right flex text-4xl font-extrabold text-white text-opacity-60 md:text-5xl"
+            style={{ wordBreak: 'keep-all' }}
+          >
             여러 프로젝트 진행
           </h2>
-          <h2 className="leading-15 justify-right flex pb-5 text-4xl font-extrabold text-white md:text-5xl">
+          <h2
+            className="leading-15 justify-right flex pb-5 text-4xl font-extrabold text-white md:text-5xl"
+            style={{ wordBreak: 'keep-all' }}
+          >
             믿을 수 있는 경력.
           </h2>
           <h2
@@ -68,16 +86,23 @@ export default function Home({ posts }) {
             href={`/projects`}
             className="leading-15 justify-right flex break-words text-xl font-bold text-white hover:underline md:text-2xl"
             aria-label={'프로젝트 보러가기'}
+            style={{ wordBreak: 'keep-all' }}
           >
             프로젝트 보러가기 &rarr;
           </Link>
         </div>
 
         <div className="aspect-w-16 aspect-h-9 relative rounded-3xl bg-gradient-to-bl from-yellow-500 to-blue-600 p-10">
-          <h2 className="leading-15 justify-right flex text-4xl font-extrabold text-white text-opacity-60 md:text-5xl">
+          <h2
+            className="leading-15 justify-right flex text-4xl font-extrabold text-white text-opacity-60 md:text-5xl"
+            style={{ wordBreak: 'keep-all' }}
+          >
             여러 사람들의 인정
           </h2>
-          <h2 className="leading-15 justify-right flex pb-5 text-4xl font-extrabold text-white sm:text-4xl md:text-5xl">
+          <h2
+            className="leading-15 justify-right flex pb-5 text-4xl font-extrabold text-white sm:text-4xl md:text-5xl"
+            style={{ wordBreak: 'keep-all' }}
+          >
             검증된 실력.
           </h2>
           <h2
@@ -91,10 +116,16 @@ export default function Home({ posts }) {
         </div>
 
         <div className="aspect-w-16 aspect-h-9 relative rounded-3xl bg-gradient-to-bl from-blue-700 to-pink-500 p-10">
-          <h2 className="leading-15 justify-right flex text-4xl font-extrabold text-white text-opacity-60 md:text-5xl">
+          <h2
+            className="leading-15 justify-right flex text-4xl font-extrabold text-white text-opacity-60 md:text-5xl"
+            style={{ wordBreak: 'keep-all' }}
+          >
             멋진 디자인
           </h2>
-          <h2 className="leading-15 justify-right flex pb-5 text-4xl font-extrabold text-white sm:text-4xl md:text-5xl">
+          <h2
+            className="leading-15 justify-right flex pb-5 text-4xl font-extrabold text-white sm:text-4xl md:text-5xl"
+            style={{ wordBreak: 'keep-all' }}
+          >
             남다른 차별성.
           </h2>
           <h2
@@ -108,7 +139,7 @@ export default function Home({ posts }) {
           </h2>
           <div className="rounded-3xl bg-white opacity-95">
             <Image
-              src="/static/images/techstack.png"
+              src="/static/images/projects.png"
               alt="Logos Of Tech Stack"
               width="800"
               height="700"

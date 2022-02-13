@@ -57,7 +57,7 @@ export default function Home({ posts }) {
             멋진 디자인
           </h2>
           <h2 className="leading-15 justify-right flex text-5xl font-extrabold tracking-tight text-white">
-            남다른 차별성
+            남다른 차별성.
           </h2>
         </div>
       </div>

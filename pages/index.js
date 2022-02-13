@@ -54,10 +54,10 @@ export default function Home({ posts }) {
         </div>
         <div className="aspect-w-16 aspect-h-9 relative rounded-3xl bg-gradient-to-bl from-blue-700 to-pink-500 p-10">
           <h2 className="leading-15 justify-right flex text-5xl font-extrabold tracking-tight text-white text-opacity-60">
-            다양한 프로젝트
+            멋진 디자인
           </h2>
           <h2 className="leading-15 justify-right flex text-5xl font-extrabold tracking-tight text-white">
-            믿을 수 있는 경력.
+            남다른 차별성
           </h2>
         </div>
       </div>

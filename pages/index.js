@@ -109,7 +109,9 @@ export default function Home() {
             className="leading-15 justify-right flex break-words pb-7 text-xl font-bold text-white md:text-2xl"
             style={{ wordBreak: 'keep-all' }}
           >
-            저는 학교에서는 물론, 외부 사람들에서도 인정받고 있습니다. 저는 유명 대학의 소프트웨어 영재원을 2년째 다니고 있습니다. 또한 오픈소스 공유 플랫폼인 GitHub 계정의 팔로워도 50명이 넘었죠. 
+            저는 학교에서는 물론, 외부 사람들에서도 인정받고 있습니다. 저는 유명 대학의 소프트웨어
+            영재원을 2년째 다니고 있습니다. 또한 오픈소스 공유 플랫폼인 GitHub 계정의 팔로워도
+            50명이 넘었죠.
           </h2>
         </div>
 

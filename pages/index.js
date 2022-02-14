@@ -106,7 +106,7 @@ export default function Home() {
             검증된 실력.
           </h2>
           <h2
-            className="leading-15 justify-right flex break-words pb-7 text-xl font-bold text-white md:text-2xl"
+            className="leading-15 justify-right flex break-words text-xl font-bold text-white md:text-2xl"
             style={{ wordBreak: 'keep-all' }}
           >
             저는 학교에서는 물론, 외부 사람들에서도 인정받고 있습니다. 저는 유명 대학의 소프트웨어

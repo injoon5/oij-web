@@ -5,6 +5,7 @@ import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
 import Image from 'next/image'
+import SocialIcon from '@/components/social-icons'
 
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter('blog')
@@ -106,13 +107,14 @@ export default function Home() {
             검증된 실력.
           </h2>
           <h2
-            className="leading-15 justify-right flex break-words text-xl font-bold text-white md:text-2xl"
+            className="leading-15 justify-right flex break-words text-xl font-bold text-white md:text-2xl pb-5"
             style={{ wordBreak: 'keep-all' }}
           >
             저는 학교에서는 물론, 외부 사람들에서도 인정받고 있습니다. 저는 유명 대학의 소프트웨어
             영재원을 2년째 다니고 있습니다. 또한 오픈소스 공유 플랫폼인 GitHub 계정의 팔로워도
             50명이 넘었죠.
           </h2>
+          <SocialIcon className="pt-10" kind="github" href={siteMetadata.github} size="10" />
         </div>
 
         <div className="aspect-w-16 aspect-h-9 relative rounded-3xl bg-gradient-to-bl from-blue-700 to-pink-500 p-10">

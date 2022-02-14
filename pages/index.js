@@ -115,7 +115,7 @@ export default function Home() {
             50명이 넘었죠.
           </h2>
 
-          <SocialIcon className="" kind="github" href={siteMetadata.github} size="8" />
+          <SocialIcon kind="github" href={siteMetadata.github} size="8" />
         </div>
 
         <div className="aspect-w-16 aspect-h-9 relative rounded-3xl bg-gradient-to-bl from-blue-700 to-pink-500 p-10">

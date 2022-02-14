@@ -48,9 +48,7 @@ const NewsletterForm = ({ title = '뉴스레터 구독' }) => {
             id="email-input"
             name="email"
             placeholder={
-              subscribed
-                ? '구독이 완료되었습니다! 메일을 확인해보세요;)  🎉'
-                : '이메일 주소를 입력해주세요. '
+              subscribed ? '메일상자를 확인해보세요;)  🎉' : '이메일 주소를 입력해주세요. '
             }
             ref={inputEl}
             required

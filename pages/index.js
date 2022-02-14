@@ -12,7 +12,7 @@ export async function getStaticProps() {
   return { props: { posts } }
 }
 
-export default function Home({ posts }) {
+export default function Home() {
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
@@ -109,9 +109,7 @@ export default function Home({ posts }) {
             className="leading-15 justify-right flex break-words pb-7 text-xl font-bold text-white md:text-2xl"
             style={{ wordBreak: 'keep-all' }}
           >
-            저는 다양한 기술 스택을 익숙하게 다룰 줄 압니다. C언어 같은 저수준 언어부터 Python 같은
-            고수준 언어까지 말이죠. 게다가 이런 언어들에 익숙하기까지 합니다. 덕분에 다양한 환경에서
-            실행되는 코드를 능숙히 만들어낼 수 있죠.
+            저는 학교에서는 물론, 외부 사람들에서도 인정받고 있습니다. 저는 유명 대학의 소프트웨어 영재원을 2년째 다니고 있습니다. 또한 오픈소스 공유 플랫폼인 GitHub 계정의 팔로워도 50명이 넘었죠. 
           </h2>
         </div>
 

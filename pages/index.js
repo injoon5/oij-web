@@ -114,7 +114,8 @@ export default function Home() {
             영재원을 2년째 다니고 있습니다. 또한 오픈소스 공유 플랫폼인 GitHub 계정의 팔로워도
             50명이 넘었죠.
           </h2>
-          <SocialIcon className="pt-10" kind="github" href={siteMetadata.github} size="10" />
+
+          <SocialIcon kind="github" href={siteMetadata.github} size="8" />
         </div>
 
         <div className="aspect-w-16 aspect-h-9 relative rounded-3xl bg-gradient-to-bl from-blue-700 to-pink-500 p-10">

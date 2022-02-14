@@ -20,7 +20,7 @@ const LayoutWrapper = ({ children }) => {
                   <Image src="/static/images/logo.png" alt="Logo" layout="fill" />
                 </div>
                 {typeof siteMetadata.headerTitle === 'string' ? (
-                  <div className="hidden h-6 pb-8 text-2xl font-semibold sm:block">
+                  <div className="hidden h-6 pb-8 text-2xl font-bold sm:block">
                     {siteMetadata.headerTitle}
                   </div>
                 ) : (
@@ -35,7 +35,7 @@ const LayoutWrapper = ({ children }) => {
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="p-1 font-medium text-gray-900 dark:text-gray-100 sm:p-4"
+                  className="p-1 font-semibold text-gray-900 dark:text-gray-100 sm:p-4"
                 >
                   {link.title}
                 </Link>

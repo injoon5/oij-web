@@ -18,13 +18,13 @@ export default function Home() {
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <h1
-        className="flex justify-center py-5 text-5xl font-bold leading-5 tracking-tight text-gray-900 dark:text-gray-100 md:text-6xl md:leading-10 lg:text-7xl lg:leading-14"
+        className="flex justify-center py-5 text-5xl font-bold leading-5 tracking-tight text-gray-900 dark:text-gray-100 md:text-7xl md:leading-14"
         style={{ wordBreak: 'keep-all' }}
       >
         Injoon Oh
       </h1>
       <h2
-        className="flex justify-center text-2xl font-extrabold leading-9 tracking-tight text-gray-700 dark:text-gray-300 md:text-4xl md:leading-14 lg:text-5xl"
+        className="flex justify-center text-2xl font-extrabold leading-9 tracking-tight text-gray-700 dark:text-gray-300 md:text-5xl md:leading-14"
         style={{ wordBreak: 'keep-all' }}
       >
         소프트웨어 개발에 관심이 많은 학생.

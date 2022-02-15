@@ -24,7 +24,7 @@ class MyDocument extends Document {
             crossOrigin="anonymous"
           />
         </Head>
-        <body className="bg-white text-black antialiased dark:bg-black dark:text-white">
+        <body className="bg-white px-4 text-black antialiased dark:bg-black dark:text-white">
           <Main />
           <NextScript />
         </body>

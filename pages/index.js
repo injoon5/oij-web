@@ -6,6 +6,7 @@ import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
 import Image from 'next/image'
 import SocialIcon from '@/components/social-icons'
+import { motion } from 'framer-motion'
 
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter('blog')
@@ -17,18 +18,54 @@ export default function Home() {
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
-      <h1
-        className="flex justify-center py-5 text-5xl font-bold leading-5 tracking-tight text-gray-900 dark:text-gray-100 md:text-7xl md:leading-14"
-        style={{ wordBreak: 'keep-all' }}
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: {
+            scale: 0.8,
+            opacity: 0,
+          },
+          visible: {
+            scale: 1,
+            opacity: 1,
+            transition: {
+              delay: 0.2,
+            },
+          },
+        }}
       >
-        Injoon Oh
-      </h1>
-      <h2
-        className="flex justify-center text-2xl font-extrabold leading-9 tracking-tight text-gray-700 dark:text-gray-300 md:text-5xl md:leading-14"
-        style={{ wordBreak: 'keep-all' }}
+        <h1
+          className="flex justify-center py-5 text-5xl font-bold leading-5 tracking-tight text-gray-900 dark:text-gray-100 md:text-7xl md:leading-14"
+          style={{ wordBreak: 'keep-all' }}
+        >
+          Injoon Oh
+        </h1>
+      </motion.div>
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: {
+            scale: 0.8,
+            opacity: 0,
+          },
+          visible: {
+            scale: 1,
+            opacity: 1,
+            transition: {
+              delay: 0.4,
+            },
+          },
+        }}
       >
-        소프트웨어 개발에 관심이 많은 학생.
-      </h2>
+        <h2
+          className="flex justify-center text-2xl font-extrabold leading-9 tracking-tight text-gray-700 dark:text-gray-300 md:text-5xl md:leading-14"
+          style={{ wordBreak: 'keep-all' }}
+        >
+          소프트웨어 개발에 관심이 많은 학생.
+        </h2>
+      </motion.div>
       <div className="py-10"></div>
       <div className="columns-1 gap-4 space-y-4 2xl:columns-2">
         <div className="aspect-w-16 aspect-h-9 relative rounded-3xl bg-gradient-to-bl from-red-500 to-blue-600 p-10">

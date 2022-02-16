@@ -7,7 +7,7 @@ sections:
 - type: heading
   label: Injoon Oh's Website
 upload_dir: uploads
-public_path: "/uploads"
+public_path: "/public/static"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
@@ -16,4 +16,4 @@ build:
   preview_docker_image: forestryio/node:12
   mount_path: "/srv"
   working_dir: "/srv"
-  instant_preview_command: npm run develop
+  instant_preview_command: npm run start

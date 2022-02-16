@@ -6,7 +6,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 const ContentSecurityPolicy = `
   default-src 'self';
   script-src 'self' 'unsafe-eval' 'unsafe-inline' app.forestry.io giscus.app use.fortawesome.com;
-  style-src 'self' 'unsafe-inline' app.forestry.io cdn.jsdelivr.net fonts.googleapis.com;
+  style-src 'self' 'unsafe-inline' app.forestry.io cdn.jsdelivr.net fonts.googleapis.com use.fortawesome.com;
   img-src * blob: data:;
   media-src 'none';
   connect-src *;

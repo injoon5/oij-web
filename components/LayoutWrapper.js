@@ -32,12 +32,6 @@ const LayoutWrapper = ({ children }) => {
           </div>
           <div className="flex items-center text-base leading-5">
             <div className="hidden sm:block">
-              <Link
-                href="https://corona-live.com"
-                className="p-2 font-semibold text-gray-900 dark:text-gray-100 md:p-4 lg:p-4 xl:p-4 2xl:p-4 3xl:p-4"
-              >
-                Covid-19: <CovidCases />
-              </Link>
               {headerNavLinks.map((link) => (
                 <Link
                   key={link.title}

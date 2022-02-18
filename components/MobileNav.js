@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import Link from './Link'
+import CovidCases from './CovidCases'
 import headerNavLinks from '@/data/headerNavLinks'
+
 
 const MobileNav = () => {
   const [navShow, setNavShow] = useState(false)
@@ -58,6 +60,15 @@ const MobileNav = () => {
           onClick={onToggleNav}
         ></button>
         <nav className="fixed mt-8 h-full">
+          <div className="px-5 py-4">
+            <Link
+              href="https://corona-live.com"
+              className="text-3xl font-bold text-gray-900 dark:text-gray-100"
+              onClick={onToggleNav}
+            >
+              Covid-19: <CovidCases/>
+            </Link>
+          </div>
           {headerNavLinks.map((link) => (
             <div key={link.title} className="px-5 py-4">
               <Link

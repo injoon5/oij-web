@@ -7,12 +7,13 @@ import SectionContainer from './SectionContainer'
 import Footer from './Footer'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
+import CovidCases from './CovidCases'
 
 const LayoutWrapper = ({ children }) => {
   return (
     <SectionContainer>
       <div className="flex h-screen flex-col justify-between">
-        <header className="sticky top-0 z-50 flex items-center justify-between bg-white py-5 opacity-95 dark:bg-black">
+        <header className="mx-auto max-w-4xl 2xl:max-w-screen-2xl fixed inset-x-0 top-0 z-50 flex items-center justify-between bg-white py-5 opacity-95 dark:bg-black">
           <div>
             <Link href="/" aria-label={siteMetadata.headerTitle}>
               <div className="flex items-center justify-between">
@@ -31,11 +32,17 @@ const LayoutWrapper = ({ children }) => {
           </div>
           <div className="flex items-center text-base leading-5">
             <div className="hidden sm:block">
+              <Link
+                  href="https://corona-live.com"
+                  className="p-2 font-semibold text-gray-900 dark:text-gray-100 md:p-4 lg:p-4 xl:p-4 2xl:p-4 3xl:p-4"
+                >
+                Covid-19: <CovidCases/>
+              </Link>
               {headerNavLinks.map((link) => (
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="p-1 font-semibold text-gray-900 dark:text-gray-100 sm:p-4"
+                  className="p-2 font-semibold text-gray-900 dark:text-gray-100 md:p-4 lg:p-4 xl:p-4 2xl:p-4 3xl:p-4"
                 >
                   {link.title}
                 </Link>

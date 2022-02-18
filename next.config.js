@@ -4,7 +4,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 // You might need to insert additional domains in script-src if you are using external services
 const ContentSecurityPolicy = `
-  default-src 'self', apiv3.corona-live.com;
+  default-src 'self';
   script-src 'self' 'unsafe-eval' 'unsafe-inline' giscus.app use.fortawesome.com www.google-analytics.com;
   style-src 'self' 'unsafe-inline' cdn.jsdelivr.net fonts.googleapis.com use.fortawesome.com;
   img-src * blob: data:;
@@ -24,10 +24,6 @@ const securityHeaders = [
   {
     key: 'Referrer-Policy',
     value: 'strict-origin-when-cross-origin',
-  },
-  {
-    key: 'Access-Control-Allow-Origin',
-    value: 'apiv3.corona-live.com',
   },
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
   {

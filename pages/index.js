@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
-      
+
       <motion.div
         initial="hidden"
         animate="visible"

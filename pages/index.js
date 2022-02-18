@@ -90,7 +90,7 @@ export default function Home() {
             고수준 언어까지 말이죠. 게다가 이런 언어들에 익숙하기까지 합니다. 덕분에 다양한 환경에서
             실행되는 코드를 능숙히 만들어낼 수 있죠.
           </h2>
-          <div className="rounded-3xl bg-white opacity-95 justify-middle">
+          <div className="rounded-3xl bg-white opacity-95">
             <Image
               src="/static/images/techstack.png"
               alt="Logos Of Tech Stack"

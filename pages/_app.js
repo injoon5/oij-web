@@ -9,6 +9,10 @@ import Script from 'next/script'
 
 import { motion } from 'framer-motion'
 
+import { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 import siteMetadata from '@/data/siteMetadata'
 import Analytics from '@/components/analytics'
 import LayoutWrapper from '@/components/LayoutWrapper'
@@ -18,6 +22,13 @@ const isDevelopment = process.env.NODE_ENV === 'development'
 const isSocket = process.env.SOCKET
 
 export default function App({ Component, pageProps, router }) {
+  useEffect(() => {
+    AOS.init({
+      delay: 400,
+      duration: 1000,
+    })
+  })
+
   return (
     <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
       <Head>

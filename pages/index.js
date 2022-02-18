@@ -69,7 +69,7 @@ export default function Home() {
       </motion.div>
       <div className="py-10"></div>
       <div className="columns-1 gap-4 space-y-4 2xl:columns-2">
-        <div className="aspect-w-16 aspect-h-9 relative rounded-3xl bg-gradient-to-bl from-red-500 to-blue-600 p-10 z-10">
+        <div className="aspect-w-16 aspect-h-9 relative z-10 rounded-3xl bg-gradient-to-bl from-red-500 to-blue-600 p-10">
           <h2
             className="leading-15 justify-right flex text-4xl font-extrabold text-white text-opacity-60 md:text-5xl"
             style={{ wordBreak: 'keep-all' }}

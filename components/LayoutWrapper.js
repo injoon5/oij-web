@@ -13,7 +13,7 @@ const LayoutWrapper = ({ children }) => {
   return (
     <SectionContainer>
       <div className="flex h-screen flex-col justify-between">
-        <header className="mx-auto max-w-4xl 2xl:max-w-screen-2xl fixed inset-x-0 top-0 z-50 flex items-center justify-between bg-white py-5 opacity-95 dark:bg-black">
+        <header className="fixed inset-x-0 top-0 z-50 mx-auto flex max-w-4xl items-center justify-between bg-white py-5 opacity-95 dark:bg-black 2xl:max-w-screen-2xl">
           <div>
             <Link href="/" aria-label={siteMetadata.headerTitle}>
               <div className="flex items-center justify-between">
@@ -33,10 +33,10 @@ const LayoutWrapper = ({ children }) => {
           <div className="flex items-center text-base leading-5">
             <div className="hidden sm:block">
               <Link
-                  href="https://corona-live.com"
-                  className="p-2 font-semibold text-gray-900 dark:text-gray-100 md:p-4 lg:p-4 xl:p-4 2xl:p-4 3xl:p-4"
-                >
-                Covid-19: <CovidCases/>
+                href="https://corona-live.com"
+                className="p-2 font-semibold text-gray-900 dark:text-gray-100 md:p-4 lg:p-4 xl:p-4 2xl:p-4 3xl:p-4"
+              >
+                Covid-19: <CovidCases />
               </Link>
               {headerNavLinks.map((link) => (
                 <Link

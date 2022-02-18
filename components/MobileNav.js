@@ -3,7 +3,6 @@ import Link from './Link'
 import CovidCases from './CovidCases'
 import headerNavLinks from '@/data/headerNavLinks'
 
-
 const MobileNav = () => {
   const [navShow, setNavShow] = useState(false)
 
@@ -66,7 +65,7 @@ const MobileNav = () => {
               className="text-3xl font-bold text-gray-900 dark:text-gray-100"
               onClick={onToggleNav}
             >
-              Covid-19: <CovidCases/>
+              Covid-19: <CovidCases />
             </Link>
           </div>
           {headerNavLinks.map((link) => (

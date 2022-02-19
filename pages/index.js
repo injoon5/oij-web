@@ -99,6 +99,7 @@ export default function Home() {
               alt="Logos Of Tech Stack"
               width="800"
               height="700"
+              priority
             />
           </div>
         </div>

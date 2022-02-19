@@ -63,6 +63,7 @@ const NewsletterForm = ({ title = '뉴스레터에 구독' }) => {
             } focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 dark:ring-offset-black`}
             type="submit"
             disabled={subscribed}
+            data-splitbee-event="Subscribe Newsletter"
           >
             {subscribed ? '감사합니다!' : '구독'}
           </button>

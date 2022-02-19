@@ -37,7 +37,11 @@ const NewsletterForm = ({ title = '뉴스레터에 구독' }) => {
   return (
     <div>
       <div className="pb-1 text-lg font-semibold text-gray-800 dark:text-gray-100">{title}</div>
-      <form className="flex flex-col sm:flex-row" onSubmit={subscribe}>
+      <form
+        className="flex flex-col sm:flex-row"
+        onSubmit={subscribe}
+        data-splitbee-event="Submit Newsletter Form"
+      >
         <div>
           <label className="sr-only" htmlFor="email-input">
             이메일 주소
@@ -63,7 +67,6 @@ const NewsletterForm = ({ title = '뉴스레터에 구독' }) => {
             } focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 dark:ring-offset-black`}
             type="submit"
             disabled={subscribed}
-            data-splitbee-event="Subscribe Newsletter"
           >
             {subscribed ? '감사합니다!' : '구독'}
           </button>

@@ -29,7 +29,7 @@ const SocialIcon = ({ kind, href, size = 8 }) => {
       rel="noopener noreferrer"
       href={href}
       data-splitbee-event="Social Media Link Clicked"
-      data-splitbee-event-mediaName={kind}
+      data-splitbee-event-medianame={kind}
     >
       <span className="sr-only">{kind}</span>
       <SocialSvg

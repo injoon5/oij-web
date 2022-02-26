@@ -11,7 +11,7 @@ import CovidCases from './CovidCases'
 
 const LayoutWrapper = ({ children }) => {
   return (
-    <SectionContainer>
+    <>
       <div className="flex h-screen flex-col justify-between">
         <header className="fixed inset-x-0 top-0 z-50 mx-auto flex max-w-4xl items-center justify-between bg-white py-5 opacity-95 dark:bg-black 2xl:max-w-screen-2xl">
           <div>
@@ -52,11 +52,13 @@ const LayoutWrapper = ({ children }) => {
             <MobileNav />
           </div>
         </header>
-        <div className="py-16"></div>
-        <main className="mb-auto">{children}</main>
-        <Footer />
+        <SectionContainer>
+          <div className="py-16"></div>
+          <main className="mb-auto">{children}</main>
+          <Footer />
+        </SectionContainer>
       </div>
-    </SectionContainer>
+    </>
   )
 }
 

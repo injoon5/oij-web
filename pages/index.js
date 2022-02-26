@@ -61,7 +61,7 @@ export default function Home() {
         }}
       >
         <h2
-          className="flex justify-center text-2xl font-extrabold leading-9 tracking-tight text-gray-700 dark:text-gray-300 md:text-5xl md:leading-14"
+          className="flex justify-center text-center text-2xl font-extrabold leading-9 tracking-tight text-gray-700 dark:text-gray-300 md:text-5xl md:leading-14"
           style={{ wordBreak: 'keep-all' }}
         >
           소프트웨어 개발에 관심이 많은 학생.

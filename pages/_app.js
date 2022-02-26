@@ -26,6 +26,7 @@ export default function App({ Component, pageProps, router }) {
     AOS.init({
       delay: 400,
       duration: 1000,
+      once: true,
     })
   })
 

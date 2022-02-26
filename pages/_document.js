@@ -25,7 +25,7 @@ class MyDocument extends Document {
           />
           <script async data-api="/_hive" src="/bee.js"></script>
         </Head>
-        <body className="bg-white px-4 text-black antialiased dark:bg-black dark:text-white">
+        <body className="overflow-x-auto bg-white px-4 text-black antialiased dark:bg-black dark:text-white">
           <Main />
           <NextScript />
         </body>
